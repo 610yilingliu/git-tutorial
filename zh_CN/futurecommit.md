@@ -1,3 +1,11 @@
+## 再次进入网页中的github仓库
+进入[github官网](https://github.com/)
+登录后点右上角自己头像，点Your repositories
+![](../pics/pic31.png)
+
+就会进入你的仓库列表，仓库名进入即可。
+![](../pics/pic32.png)
+
 ## 后续提交与修改
 
 在你修改完仓库内容后，在有.git隐藏文件夹的那个文件夹下按住shift点击右键，选择***在此处打开Power Shell***(Win8及以下为在此处打开命令行窗口)在当前目录下打开命令行窗口

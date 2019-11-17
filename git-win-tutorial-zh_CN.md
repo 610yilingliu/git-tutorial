@@ -124,4 +124,4 @@
 
 第一次提交完成
 
-关于后续提交和修改请看[这个文档](./zh_CN/futurecommit.md)
+关于后续提交,修改以及再次进入github网页中仓库请看[这个文档](./zh_CN/futurecommit.md)
