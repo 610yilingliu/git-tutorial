@@ -70,7 +70,7 @@
 此时会在当前目录上创建一个.git 隐藏文件夹
 ![](./pics/pic16.png)
 
-现在开始配置登陆github账户信息以将目录上传至github
+现在开始配置登陆github全局用户信息以将目录上传至github
 
 在命令行中输入``` git config --global user.name "email@email.com" ```配置全局账户名
 
@@ -86,3 +86,42 @@
 
 ![](./pics/pic17.png)
 
+配置完全局用户信息后输入```git add .```将当前目录下所有内容添加进待提交缓存中
+
+按Enter
+
+然后``` git commit -m "description"```添加提交说明并确认提交，此时文件提交至本地git仓库但还未上传。双引号内内容为提交说明，如果懒打个空格就行。但是还是建议写清描述。
+
+按Enter后控制台会打印出提交文件的信息，等他滚完。
+
+![](./pics/pic18.png)
+
+此时再次进入[Github官网](https://github.com/)，因为你已经注册了账号所以现在应该是登录状态（如果退出登录了点右上角Sign in重新登一下就好）点Start a project创建仓库
+![](./pics/pic19.png)
+
+![](./pics/pic20.png)
+输入仓库名。描述可以随便填
+下面Public（公开）和Private（私有）是权限设置，如果是私人仓库**必须设置为Private**， Public的意思为公开，别人是可以用git内部搜索引擎搜索并且访问你的仓库的。不过git仓库权限也可以随时修改。修改Git仓库权限教程
+
+点击Create repository创建仓库，会出现这样的一个页面
+![](./pics/pic21.png)
+点红色箭头所指的地方复制你的仓库http地址，如果你的浏览器无法用这个方式直接复制，那么选中前面那一串地址，右键复制也行
+
+然后回到前面的命令行
+
+输入 ```git remote add origin https://yourrepo.git``` (http到git的那一串文字是你刚才复制下来的仓库地址)添加你本地git仓库对应的远程github仓库地址
+
+再输入```git push -u origin master```其中origin是github默认的远程分支名，而master是默认的本地分支名。第一次提交就老实按默认的来好了，至于建立其他分支什么的，等熟悉了再骚。至于第一次提交为什么要加```-u```，[解释在这里](https://stackoverflow.com/questions/5697750/what-exactly-does-the-u-do-git-push-u-origin-master-vs-git-push-origin-ma)
+
+按Enter后会弹一个小窗出来让你登录github，输你的用户名（邮箱也可以）和密码登就行
+![](./pics/pic22.png)
+如果登录没有问题，命令行会变成这样
+![](./pics/pic23.png)
+只要没有error就成功了
+
+再回网页刷新一下，你的仓库中就有东西了
+![](./pics/pic24.png)
+
+第一次提交完成
+
+关于后续提交和修改请看[这个文档](./zh_CN/futurecommit.md)
