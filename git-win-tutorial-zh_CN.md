@@ -129,7 +129,7 @@
 
 输入 ```git remote add origin https://yourrepo.git``` (http到git的那一串文字是你刚才复制下来的仓库地址)添加你本地git仓库对应的远程github仓库地址
 
-再输入```git push -u origin master```其中origin是github默认的远程分支名，而master是默认的本地分支名。第一次提交就老实按默认的来好了，至于建立其他分支什么的，等熟悉了再骚。至于第一次提交为什么要加```-u```，[解释在这里](https://stackoverflow.com/questions/5697750/what-exactly-does-the-u-do-git-push-u-origin-master-vs-git-push-origin-ma)
+再输入```git push -u origin master```其中origin是github默认的远程分支名（是的没错就是你在上一步输的那个origin)，而master是默认的本地分支名。第一次提交就老实按默认的来好了，至于建立其他分支什么的，等熟悉了再骚。至于第一次提交为什么要加```-u```，[解释在这里](https://stackoverflow.com/questions/5697750/what-exactly-does-the-u-do-git-push-u-origin-master-vs-git-push-origin-ma)
 
 按Enter后会弹一个小窗出来让你登录github，输你的用户名（邮箱也可以）和密码登就行
 
