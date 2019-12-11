@@ -6,16 +6,16 @@
 ### 1. 安装git
 
 在[Git官网下载地址](https://git-scm.com/downloads)中点击Windows,如图：
-![](./pics/pic1.png)
+![](https://github.com/610yilingliu/git-tutorial/blob/master/pics/pic1.png)
 
 随后会进入下载页面。如果无意外会在进入下载页面后10秒之内自动开始下载，如果没有开始自动下载，请点击途中红框所示部分
-![](./pics/pic2.png)
+![](https://github.com/610yilingliu/git-tutorial/blob/master/pics/pic2.png)
 墙内下载速度较慢，并且没有绝对靠谱的镜像（百度网盘中储存的Git镜像极易被和谐，搜索引擎搜到的不是广告就是老版本）所以推荐在睡觉的时候下载（我在不开VPN的情况下下载了半小时）
 
 下载后双击安装一路点下一步，如果安全软件或者windows本身有提示或者报警，一路放行。
 
 在设置默认文本编辑软件的时候（我的系统语言是英语，对于系统语言是中文的用户应该会显示中文？），如果你没有任何基础也可以直接默认用vim。反正对于初学者其实需要编辑的机会几乎没有，只需要在命令行中push,pull就行了
-![](./pics/pic3.png)
+![](https://github.com/610yilingliu/git-tutorial/blob/master/pics/pic3.png)
 
 而对于有基础的人，相信vim不是事。无非开始编辑和结束编辑的画风和普通文本编辑器不太一样，按I开始编辑，esc退出编辑，:wq保存退出而已。我不相信你连Ctrl+C, Ctrl+V, Ctrl+S这种基础的键盘命令都不知道。 但是你如果实在是习惯用其他的编辑器，就在下拉菜单中选择其他的。
 
@@ -26,17 +26,17 @@
 ### 2.注册github账户
 
 进入[Github官网](https://github.com/)填写注册资料，点击“Sign up for Github" 进行注册
-![](./pics/pic4.png)
+![](https://github.com/610yilingliu/git-tutorial/blob/master/pics/pic4.png)
 
 注意，如果你看到了以下提示
-![](./pics/pic5.png)
+![](https://github.com/610yilingliu/git-tutorial/blob/master/pics/pic5.png)
 
 那么意味着你输入的用户名不符合规范。用户名只能由数字，字母和单个 "-“ 组成（不接受下划线等其他字符），也不能以"-"开头或结尾。
 
 如果在你觉得自己输入的用户名没问题，请检查输入法的字符是否为**半角字符**
 对于搜狗输入法，检查方式为随便在键盘上按一个字母调出输入框，然后在输入框任意位置上右键。这个操作会调出搜狗输入法的菜单
 
-![](./pics/pic6.png)
+![](https://github.com/610yilingliu/git-tutorial/blob/master/pics/pic6.png)
 
 查看红框所示**全半角**处是否为月亮标识。如果为太阳标识，点一下即可切换为半角。
 
@@ -44,44 +44,44 @@
 
 出现Well Done后点下方按钮进入下一步
 
-![](./pics/pic7.png)
+![](https://github.com/610yilingliu/git-tutorial/blob/master/pics/pic7.png)
 
 选择箭头所指处即可，这是问你要不要氪金的。作为普通用户，免费版已经够用了
 
-![](./pics/pic8.png)
+![](https://github.com/610yilingliu/git-tutorial/blob/master/pics/pic8.png)
 
 下一步是一个小问卷，随便选选然后滑到最下点下一步，除了第一个是否有编程经验外其他都是可以不填的。系统在你开始使用github后会根据你选择的内容给你适当推一点东西，但绝对不是广告轰炸。
 
-![](./pics/pic9.png)
+![](https://github.com/610yilingliu/git-tutorial/blob/master/pics/pic9.png)
 
 这步需要你去注册时填的邮箱
-![](./pics/pic10.png)
+![](https://github.com/610yilingliu/git-tutorial/blob/master/pics/pic10.png)
 
 你会收到一封带链接的邮件,点进去按蓝色按钮就行了。如果没有自动跳转，后面文字"Button not working? Paste the following link into your browser" 后有一个链接（我把我自己的打码了），将这个链接复制到浏览器地址栏中进入链接即可。
 
-![](./pics/pic11.png)
-![](./pics/pic12.png)
+![](https://github.com/610yilingliu/git-tutorial/blob/master/pics/pic11.png)
+![](https://github.com/610yilingliu/git-tutorial/blob/master/pics/pic12.pngg)
 
 进入连接之后只要出现 "Your email is verified. Would you like to create your first repository" 就表示你的账户彻底创建成功了。现在可以把这个页面直接叉掉
 
-![](./pics/pic13.png)
+![](https://github.com/610yilingliu/git-tutorial/blob/master/pics/pic13.png)
 
 
 ### 3.将本地目录同步到Github
 
 前往需要同步的目录，按住shift在空白处点击右键，会出现在此处打开PowerShell(win10下。win8下是打开命令窗口)
 
-![](./pics/pic14.png)
+![](https://github.com/610yilingliu/git-tutorial/blob/master/pics/pic14.png)
 
 其实使用git bash here（git命令行操作界面）或者git GUI here（git图形操作界面）也可以。但是建议熟悉直接使用命令行，这样对以后跨系统工作有好处（我个人是Windows, Mac, Linux三个系统都在使用，但是Mac用得多）
 
 进入后输入```git init``` 然后按Enter（同样需要半角字符！！！你直接用英文输入法就行了别用中文，用中文在打逗号句号的时候很容易突然冒出来个全角。注意，以下所有命令都需要半角字符！！全角直接报错GG）
 
-![](./pics/pic15.png)
+![](https://github.com/610yilingliu/git-tutorial/blob/master/pics/pic15.png)
 
 此时会在当前目录上创建一个.git 隐藏文件夹
 
-![](./pics/pic16.png)
+![](https://github.com/610yilingliu/git-tutorial/blob/master/pics/pic16.png)
 
 现在开始配置登陆github全局用户信息以将目录上传至github
 
@@ -97,7 +97,7 @@
 
 按Enter
 
-![](./pics/pic17.png)
+![](https://github.com/610yilingliu/git-tutorial/blob/master/pics/pic17.png)
 
 配置完全局用户信息后输入```git add .```将当前目录下所有内容添加进待提交缓存中.注意add和英文句号中间有一个空格。英文句号为正则表达式，意为提交当前目录下所有内容
 
@@ -107,21 +107,21 @@
 
 按Enter后控制台会打印出提交文件的信息，等他滚完。
 
-![](./pics/pic18.png)
+![](https://github.com/610yilingliu/git-tutorial/blob/master/pics/pic18.png)
 
 此时再次进入[Github官网](https://github.com/)，因为你已经注册了账号所以现在应该是登录状态（如果退出登录了点右上角Sign in重新登一下就好）点Start a project创建仓库
 
-![](./pics/pic19.png)
+![](https://github.com/610yilingliu/git-tutorial/blob/master/pics/pic19.png)
 
-![](./pics/pic20.png)
+![](https://github.com/610yilingliu/git-tutorial/blob/master/pics/pic20.png)
 
 输入仓库名。描述可以随便填
 
-下面Public（公开）和Private（私有）是权限设置，如果是私人仓库**必须设置为Private**， Public的意思为公开，别人是可以用git内部搜索引擎搜索并且访问你的仓库的。不过git仓库权限也可以随时修改。[修改Git仓库权限教程](./zh_CN/change_permission.md)
+下面Public（公开）和Private（私有）是权限设置，如果是私人仓库**必须设置为Private**， Public的意思为公开，别人是可以用git内部搜索引擎搜索并且访问你的仓库的。不过git仓库权限也可以随时修改。[修改Git仓库权限教程](https://github.com/610yilingliu/git-tutorial/blob/master/zh_CN/change_permission.md)
 
 点击Create repository创建仓库，会出现这样的一个页面
 
-![](./pics/pic21.png)
+![](https://github.com/610yilingliu/git-tutorial/blob/master/pics/pic21.png)
 
 点红色箭头所指的地方复制你的仓库http地址，如果你的浏览器无法用这个方式直接复制，那么选中前面那一串地址，右键复制也行
 
@@ -133,18 +133,18 @@
 
 按Enter后会弹一个小窗出来让你登录github，输你的用户名（邮箱也可以）和密码登就行
 
-![](./pics/pic22.png)
+![](https://github.com/610yilingliu/git-tutorial/blob/master/pics/pic22.png)
 
 如果登录没有问题，命令行会变成这样
 
-![](./pics/pic23.png)
+![](https://github.com/610yilingliu/git-tutorial/blob/master/pics/pic23.png)
 
 只要没有error就成功了
 
 再回网页刷新一下，你的仓库中就有东西了
 
-![](./pics/pic24.png)
+![](https://github.com/610yilingliu/git-tutorial/blob/master/pics/pic24.png)
 
 第一次提交完成
 
-关于后续提交,修改以及再次进入github网页中仓库请看[这个文档](./zh_CN/futurecommit.md)
+关于后续提交,修改以及再次进入github网页中仓库请看[这个文档](https://github.com/610yilingliu/git-tutorial/blob/master/zh_CN/futurecommit.md)
